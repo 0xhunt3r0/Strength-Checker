@@ -1,0 +1,46 @@
+body {
+background: url('background.jpg') no-repeat center center/cover;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+backdrop-filter: blur(4px);
+}
+
+.pass-card {
+max-width: 480px;
+width: 100%;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 20px;
+padding: 30px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(10px);
+}
+
+.strength-bar {
+height: 12px;
+border-radius: 10px;
+background-color: #e5e5e5;
+overflow: hidden;
+margin-top: 10px;
+}
+
+.strength-fill {
+height: 100%;
+width: 0%;
+transition: 0.3s;
+background-color: red;
+}
+
+.strength-badges span {
+padding: 5px 14px;
+border-radius: 20px;
+background: #f0f0f0;
+margin-right: 8px;
+font-size: 14px;
+}
+
+.strength-active {
+background-color: #d1ffd8 !important;
+border: 1px solid #00b431;
+}

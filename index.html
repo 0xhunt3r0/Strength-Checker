@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Strength Checker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="pass-card">
+    <h3 class="text-center mb-3">Password Strength Checker</h3>
+    <div class="input-group mb-3">
+      <span class="input-group-text">
+        <i class="bi bi-shield-lock"></i>
+      </span>
+      <input type="text" id="pass-input" class="form-control" placeholder="Enter your password">
+    </div>
+
+    <!-- Strength Bar -->
+    <div class="strength-bar">
+      <div id="strengthFill" class="strength-fill"></div>
+    </div>
+
+    <!-- Strength Labels -->
+    <div class="strength-badges mt-3">
+      <span id="vweak">Very Weak</span>
+      <span id="weak">Weak</span>
+      <span id="strong">Strong</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-4">
+      <button class="btn btn-primary w-100 mb-2" id="checkBtn">Check Password</button>
+      <button class="btn btn-secondary w-100" id="generateBtn">Generate Password</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
